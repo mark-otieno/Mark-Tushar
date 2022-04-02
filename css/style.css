@@ -1,7 +1,11 @@
 body{
     background-color: #eee;
 }
-
+@media (max-height: 800px){
+	p{
+		font-size:30px;
+	}
+}
 #header-img{
     width: 100px;
     height: 100px;
@@ -17,4 +21,23 @@ li{
 
 a{
     text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #cc0000;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    padding: 1em;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and(max-width: 600px){
+    body{
+        background-color: lightblue;
+    }
 }
